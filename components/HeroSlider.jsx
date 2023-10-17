@@ -37,8 +37,7 @@ const data = [
 
 const HeroSlider = () => {
     return (
-        // className={`px-5 py-5`}
-        <div className="relative text-white text-[20px] w-full mx-auto ">
+        <div className="relative text-white text-[20px] w-full mx-auto">
             <Carousel
                 autoPlay={true}
                 infiniteLoop={true}
@@ -67,14 +66,16 @@ const HeroSlider = () => {
                         <div key={i}>
                             <img
                                 src={img}
-                                className="aspect-[16/10] md:aspect-auto object-cover"
+                                className="aspect-[18/10] md:aspect-auto object-cover"
                             />
-                            <div className="h-[100%] w-[40%] absolute top-0 left-0 z-10 px-[5px] md:px-[10px] py-[5px] md:py-[25px] bg-black cursor-pointer transition ease-in-out duration-300 font-oswald font-medium p-8 opacity-80 hover:opacity-99">
-                                <span className="text-[18px] md:text-[16px] lg:text-[32px]">{text}</span>
-                                <img src={imgSec} alt="image" className="p-4 md:p-6 lg:p-8" />
-                                <p className="text-[12px] md:text-[22px] lg:text-[32px]">&#8377;{rate}</p>
-                                <button className="px-1 py-0 mx-0 my-0 md:px-2 md:py-2 md:my-4 lg:my-5 text-[12px] md:text-[32px] lg:text-[22px]  border-[1px] border-white-100/100 hover:text-[18px]">{btn}</button>
-                            </div>
+                            {/* <div className="h-[100%] w-[40%] flex-col items-center justify-around gap-5 backdrop-filter backdrop-blur-lg bg-opacity-5 absolute top-0 left-0 z-10 cursor-pointer hover:opacity-99">
+                                <section className="mt-[100px]">
+                                    <span className="text-[18px] md:text-[16px] lg:text-[32px]">{text}</span>
+                                    <img src={imgSec} alt="image" className="my-5" />
+                                    <p className="text-[12px] md:text-[22px] lg:text-[32px] my-2">&#8377;{rate}</p>
+                                    <button className="text-[12px] md:text-[32px] lg:text-[22px] border-[1px] border-white-100/100 hover:text-[18px]">{btn}</button>
+                                </section>
+                            </div> */}
                         </div>
                     );
                 })}

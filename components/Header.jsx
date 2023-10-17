@@ -21,7 +21,7 @@ const Header = () => {
   const controlNavbar = () => {
     if (window.scrollY > 200) {
       if (window.scrollY > lastScrollY) {
-        setShow("-translate-y-[80px]");
+        setShow("-translate-y-[90px]");
       } else {
         setShow("shadow-sm");
       }
@@ -38,16 +38,19 @@ const Header = () => {
     };
   }, [lastScrollY]);
 
+  // backdrop-filter backdrop-blur-lg bg-opacity-5
+
   return (
     <header
-      className={`w-full h-[50px] md:h-[80px] px-4 bg-white flex items-center justify-between z-20 sticky top-0 transition-transform duration-300 drop-shadow-sm ${show}`}
+      // backdrop-filter backdrop-blur-lg bg-opacity-30
+      className={`w-full h-[80px] md:h-[100px] px-10 bg-white flex items-center justify-between z-20 fixed  top-0 transition-transform duration-300 drop-shadow-sm ${show}`}
     >
-      <div className="h-[50px] flex justify-between items-center">
+      <div className="h-[80%]">
         <Link href="/">
           <img
-            src="/logo.jpeg"
+            src="/kesha-logo.png"
             alt="logo"
-            className="w-[130px] md:w-[200px] lg:w-[235px]"
+            className="h-[100%]"
           />
         </Link>
       </div>
@@ -66,8 +69,8 @@ const Header = () => {
         />
       }
 
-      <div className=" text-black flex items-center justify-center">
-        <div className="w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-blacl/[0.05] cursor-pointer relative">
+      <div className="text-black flex items-center justify-center">
+        <div className="w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)] hover:bg-blacl/[0.05] cursor-pointer relative">
           <FaSearch />
         </div>
         <Link href="/cart">
@@ -84,7 +87,7 @@ const Header = () => {
           </div>
         </Link>
 
-        <Link href={`/profile`}>
+        <Link href={`/signup`}>
           <div className="w-8 md:w-12 h-8 md:h-12 rounded-full flex justify-center items-center hover:bg-blacl/[0.05] cursor-pointer relative">
             <FaUser />
           </div>

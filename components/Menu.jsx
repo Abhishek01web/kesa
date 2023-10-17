@@ -18,7 +18,7 @@ const subMenuData = [
 
 const Menu = ({ showCatMenu, setShowCatMenu }) => {
     return (
-        <ul className='hidden md:flex items-center gap-8 font-semibold text-black'>
+        <ul className='hidden md:flex items-center gap-8 font-semibold text-balck [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]'>
             {
                 data.map((elm) => {
                     return (
@@ -32,7 +32,7 @@ const Menu = ({ showCatMenu, setShowCatMenu }) => {
                                     <BsChevronDown size={14} />
                                     {
                                         showCatMenu && (
-                                            <ul className='bg-white absolute top-6 left-0 min-w-[250px] px-1 py-1 text-black shadow-lg rounded-md'>
+                                            <ul className='backdrop-filter backdrop-blur-lg absolute top-6 left-0 min-w-[250px] px-1 py-1  shadow-lg rounded-md'>
                                                 {subMenuData?.map((subm) => {
                                                     return (
                                                         <Link key={subm.id} href={`/category/${subm.name}`} onClick={() => setShowCatMenu(false)}>

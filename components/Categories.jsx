@@ -88,27 +88,25 @@ const Categories = () => {
 
     return (
         <>
-            <div className="mt-[10px] md:mt-[10px] mb-[10px] md:mb-0">
+            <div className="w-[100%] mt-[10px] md:mt-[10px] mb-[10px] md:mb-0">
                 {/* <div className="text-2xl font-bold mb-5">You Might Also Like</div> */}
                 <Carousel
                     responsive={responsive}
-                    containerClass="-mx-[10px]"
                     itemClass="px-[5px] md:px-[10px]"
                     autoPlay
                     autoPlaySpeed={2000}
                     infinite
-                    className='-mx-0'
                 >
                     {
                         data.map((elm, i) => {
                             const { img, text, btn, url } = elm;
 
                             return (
-                                <Link href={`/category/${elm.text}`}  >
-                                    <section key={i} className='relative transform overflow-hidden bg-white duration-200 hover:scale-105 cursor-pointer '>
+                                <Link href={`/category/${elm.text}`} key={i} >
+                                    <section className='relative transform overflow-hidden bg-white duration-200 hover:scale-105 cursor-pointer'>
                                         <img src={img} alt="img" />
                                         <div className='absolute top-[75%] md:top-[82%] left-2 md:left-5 text-[12px] md:text-[18px] text-white drop-shadow-lg' >
-                                            <p className='p-1 md:p-2 text-black text-shadow-lg bg-white rounded-lg duration-200'>{text}</p>
+                                            <p className='p-1 md:p-2 text-white text-shadow-lg rounded-lg duration-200'>{text}</p>
                                         </div>
                                     </section>
                                 </Link>

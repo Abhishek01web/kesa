@@ -1,11 +1,11 @@
-import React from 'react'
+import Head from 'next/head';
 
-const profile = () => {
+function profile({ user, orders }) {
   return (
-    <div className='h-[90vh] w-full flex items-center justify-center'>
-      
-    </div>
-  )
+    <>
+      profile
+    </>
+  );
 }
 
 export default profile;
