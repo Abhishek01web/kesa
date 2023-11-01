@@ -7,6 +7,7 @@ const data = [
     { id: 2, name: "About", url: "/about" },
     { id: 3, name: "Categories", subMenu: true },
     { id: 4, name: "Contact", url: "/contact" },
+    { id: 5, name: "CustomProduct", url: "/customproduct" }
 ];
 
 const subMenuData = [
@@ -24,7 +25,7 @@ const Menu = ({ showCatMenu, setShowCatMenu }) => {
                     return (
                         <React.Fragment key={elm.id}>
                             {!!elm?.subMenu ? (
-                                <li className='cursor-pointer flex items-center gap-2 relative'
+                                <li className={`cursor-pointer flex items-center gap-2 relative`}
                                     onMouseEnter={() => setShowCatMenu(true)}
                                     onMouseLeave={() => setShowCatMenu(false)}
                                 >

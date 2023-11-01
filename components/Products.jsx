@@ -1,7 +1,9 @@
 import React from 'react';
 import ProductCard from './ProductCart';
+import FilterProducts from './FilterProducts';
 
 const Products = () => {
+
     return (
         <section className="overflow-hidden">
             <section className='h-[100px] w-[full] flex flex-col justify-center items-center gap-3'>

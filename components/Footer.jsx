@@ -9,12 +9,22 @@ const data = [
     {
         id: 1,
         link: "Privacy Policy",
-        url: "/privacy",
+        url: "/privacypolicy",
     },
     {
         id: 2,
         link: " Terms Of Service",
-        url: "/t&s",
+        url: "/termsofservice",
+    },
+    {
+        id: 3,
+        link: "Shipping Policy",
+        url: "/shippingpolicy",
+    },
+    {
+        id: 4,
+        link: "Return & Exchange Policy",
+        url: "/returnandexchangepolicy",
     }
 ]
 

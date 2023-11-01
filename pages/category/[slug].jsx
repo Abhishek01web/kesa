@@ -8,12 +8,11 @@ const category = () => {
   const { slug } = rout.query;
 
   return (
-    <section className=''>
+    <section className='mt-[120px]'>
       <Wrapper>
         <div className="text-center max-w-[800px] mx-auto mt-8 md:mt-10">
-          <div className="text-[28px] md:text-[34px] mb-5 font-semibold leading-tight">
-            {slug}
-          </div>
+          <h1 className='uppercase text-[28px] text-black text-center font-oswald font-bold md:text-[32px]'>{slug}</h1>
+          <p className="mb-4 text-center dark:text-black">Discover Our Handpicked Collection of Exquisite Jewelry Pieces</p>
         </div>
 
         {/* products grid start */}

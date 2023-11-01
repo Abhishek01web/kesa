@@ -6,12 +6,17 @@ import Poster from "@/components/Poster";
 // import Insta from "@/components/Insta";
 import Testimonial from "@/components/Testimonial";
 import Gallery from "@/components/Gallery ";
+import Accordion from "@/components/Accordion";
+import FilterProducts from "@/components/FilterProducts";
 
 export default function Home() {
   return (
     <main className="h-[100%]">
       <HeroSlider />
       <Categories />
+      <Wrapper className={`max-w-[1860px] my-[6rem]`}>
+        <FilterProducts />
+      </Wrapper>
       <section>
         <Poster />
         <Wrapper className={`max-w-[1860px]`}>
@@ -32,6 +37,7 @@ export default function Home() {
       </section>
       <Testimonial />
       <Gallery />
+      <Accordion />
     </main>
   );
 }

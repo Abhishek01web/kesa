@@ -20,7 +20,7 @@ const Categories = () => {
             url: "/category/"
         },
         {
-            img: '/category/3.png',
+            img: '/cat.webp',
             text: "Earings",
             btn: "View All",
             url: "/category/"
@@ -104,7 +104,7 @@ const Categories = () => {
                             return (
                                 <Link href={`/category/${elm.text}`} key={i} >
                                     <section className='relative transform overflow-hidden bg-white duration-200 hover:scale-105 cursor-pointer'>
-                                        <img src={img} alt="img" />
+                                        <img src={img} alt="img" className='w-full h-[180px] md:h-[320px]' />
                                         <div className='absolute top-[75%] md:top-[82%] left-2 md:left-5 text-[12px] md:text-[18px] text-white drop-shadow-lg' >
                                             <p className='p-1 md:p-2 text-white text-shadow-lg rounded-lg duration-200'>{text}</p>
                                         </div>

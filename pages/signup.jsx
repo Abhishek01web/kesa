@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { useState } from 'react';
 
@@ -31,8 +32,8 @@ function signup() {
             <h2 className="text-2xl font-semibold mb-4">Forgot Password</h2>
             <input
               type="email"
-              placeholder="Email"
-              className="w-full px-4 py-2 rounded mb-4"
+              placeholder="Email" x
+              className="w-full px-4 py-2 rounded mb-4 border"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />

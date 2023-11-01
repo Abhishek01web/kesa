@@ -13,7 +13,7 @@ const ProductCard = () => {
                 height={500}
                 src={`/product.jpg`}
                 alt={`hero-1.jpg`}
-                className="rounded-md"
+                className="rounded-md md:h-[320px] md:w-[360px]"
             />
             <div className="text-black/[0.9] md:mt-2">
                 <h2 className="text-[14px] md:text-lg font-medium">Anubis and Ankh Necklace</h2>
